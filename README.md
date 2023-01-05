@@ -1,5 +1,7 @@
 # Connected sensor kit: Radar presence application
 
+[Open in Red Hat CodeReady Workspaces](https://devspaces.eu-at-3.icp.infineon.com/dashboard/#/ide/riestere-devspaces/mtb-example-sensors-radar-presence)
+
 ## Overview
 
 This code example demonstrates Infineon's radar presence solution to detect human presence within a configurable distance. Powered by the [XENSIV™ 60-GHz radar](https://www.infineon.com/cms/en/product/sensor/radar-sensors/radar-sensors-for-iot/60ghz-radar/), this solution provides extremely high accuracy in detecting both micro and macro motions. The ability to detect micro motion offers unique benefits over conventional technologies deployed to detect human presence, thus making it perfect for user interaction with devices.
