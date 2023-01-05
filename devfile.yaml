@@ -1,0 +1,44 @@
+schemaVersion: 2.1.0
+metadata:
+  name: mtb-example-sensors-radar-presence
+projects:
+  - name: mtb-example-sensors-radar-presence
+    git:
+      remotes:
+        origin: https://github.com/riestmo/mtb-example-sensors-radar-presence.git
+components:
+  - name: universal-developer-image
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8:3.3
+      memoryLimit: 2G
+      mountSources: true
+  - name: modus-linux-24
+    container:
+      image: pss-sw-gov-registry.vih.infineon.com/pssbuild/modus-linux-24:latest
+      memoryLimit: 2G
+      mountSources: true
+      command:
+      - sleep
+      - infinity
+commands:
+  - id: getlibs
+    exec:
+      label: "Get project dependencies."
+      component: modus-linux-24
+      workingDir: ${PROJECTS_ROOT}/mtb-example-sensors-radar-presence
+      commandLine: make getlibs
+  - id: build
+    exec:
+      label: "Build project."
+      component: modus-linux-24
+      workingDir: ${PROJECTS_ROOT}/mtb-example-sensors-radar-presence
+      commandLine: make build
+  - id: clean
+    exec:
+      label: "Clean project."
+      component: modus-linux-24
+      workingDir: ${PROJECTS_ROOT}/mtb-example-sensors-radar-presence
+      commandLine: make clean
+events:
+  postStart:
+    - getlibs
