@@ -1,6 +1,6 @@
 # Connected sensor kit: Radar presence application
 
-[Open in Red Hat CodeReady Workspaces](https://devspaces.eu-at-3.icp.infineon.com/dashboard/#/ide/riestere-devspaces/mtb-example-sensors-radar-presence)
+[Open in Red Hat CodeReady Workspaces](https://devspaces.eu-at-3.icp.infineon.com/dashboard/#/load-factory?url=https%3A%2F%2Fraw.githubusercontent.com%2Friestmo%2Fmtb-example-sensors-radar-presence%2Fredhat-code-ready-workspace%2Fdevfile.yaml)
 
 ## Overview
 
