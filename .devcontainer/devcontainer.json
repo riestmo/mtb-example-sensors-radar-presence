@@ -10,6 +10,11 @@
   "workspaceFolder": "/home/vscode/mtb-workspace/mtb-example-sensors-radar-presence",
   "customizations": {
     "vscode": {
+      "settings": {
+        "remote.extensionKind": {
+            "arm.device-manager": ["ui"]
+        }
+      },
       "extensions": [
         "arm.device-manager",
         "arm.embedded-debug"
