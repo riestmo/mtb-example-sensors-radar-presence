@@ -1,0 +1,22 @@
+{
+  "name": "ModusToolBox",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "VARIANT": "latest"
+    }
+  },
+  "workspaceFolder": "/home/vscode/mtb-workspace/mtb-example-sensors-radar-presence",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "arm.device-manager",
+        "arm.embedded-debug"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ]
+}
